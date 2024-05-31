@@ -1,7 +1,6 @@
 name: Build a Pelican Website
 on:
   push:
-    branches: [ "master" ]
   workflow_dispatch:
 jobs:
   build-pelican:
@@ -9,9 +8,7 @@ jobs:
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4
+      - uses: apache/infrastructure-actions/pelican@noforce
         with:
-          ref: 'master'
-      - uses: apache/infrastructure-actions/pelican@main
-        with:
-          destination: 'asf-site'
+          destination: 'sebb/test-site'
           gfm: 'true'
