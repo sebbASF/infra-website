@@ -1,7 +1,6 @@
 staging:
-  whoami: asf-break-test
-  profile: ~
-  autostage: preview/*
+  whoami: dfoulks/bb_pel-site
+  profile: bb-pel
 
 pelican:
   whoami: dfoulks/bb_pel
