@@ -3,6 +3,10 @@ staging:
   profile: ~
   autostage: preview/*
 
+pelican:
+  whoami: dfoulks/bb_pel
+  target: dfoulks/bb_pel-site
+
 github:
   description:   "ASF Infrastructure Team Website Repository"
   homepage:      https://infra.apache.org/
